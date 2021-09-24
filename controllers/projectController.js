@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 
 // *** Create Route
 router.post('/', (req, res) => {
-    console.log("Testing")
+    console.log("Testing project create")
     console.log(req.body)
     db.Project.create(req.body, (err, createdProject) => {
         if (err) {

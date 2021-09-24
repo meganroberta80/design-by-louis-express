@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const connectionString = 'mongodb://localhost:27017/testdb'
+const connectionString = 'mongodb://localhost:27017/designdb'
 
 mongoose.connect(connectionString, { 
 	useNewUrlParser: true,
@@ -13,4 +13,5 @@ mongoose.connection.on('connected', () => {
 
 module.exports = {
     Project: require('./Project'),
+    Blog: require('./Blog')
   }
